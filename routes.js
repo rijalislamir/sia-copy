@@ -1,6 +1,13 @@
 const routes = [
   {
     method: 'GET',
+    path: '/',
+    handler: () => {
+      return 'get homepage'
+    },
+  },
+  {
+    method: 'GET',
     path: '/users',
     handler: () => {
       return 'get user'
@@ -31,5 +38,5 @@ const routes = [
     },
   },
 ];
- 
+
 module.exports = routes;
