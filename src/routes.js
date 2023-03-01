@@ -37,6 +37,13 @@ const routes = [
       return `delete user ${id}`
     },
   },
+  {
+    method: 'GET',
+    path: '/subjects',
+    handler: () => {
+      return 'get subjects'
+    },
+  },
 ];
 
 module.exports = routes;
