@@ -1,41 +1,30 @@
+const {
+  getUsers,
+  createUser,
+  updateUser,
+  deleteUser,
+} = require('./handler')
+
 const routes = [
   {
     method: 'GET',
-    path: '/',
-    handler: () => {
-      return 'get homepage'
-    },
-  },
-  {
-    method: 'GET',
     path: '/users',
-    handler: () => {
-      return 'get user'
-    },
+    handler: getUsers,
   },
   {
     method: 'POST',
     path: '/users',
-    handler: () => {
-      return 'post user'
-    },
+    handler: createUser,
   },
   {
     method: 'PUT',
     path: '/users/{id}',
-    handler: (request, h) => {
-      const { id } = request.params
-
-      return `put user ${id}`
-    },
+    handler: updateUser,
   },
   {
     method: 'DELETE',
     path: '/users/{id}',
-    handler: (request, h) => {
-      const { id } = request.params
-      return `delete user ${id}`
-    },
+    handler: deleteUser,
   },
   {
     method: 'GET',

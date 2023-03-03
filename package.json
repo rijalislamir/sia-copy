@@ -2,7 +2,7 @@
   "name": "sia-copy",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/main.js",
   "scripts": {
     "dev": "nodemon src/main.js",
     "start": "NODE_ENV=production node src/main.js"
